@@ -84,6 +84,7 @@ def defineLib(Project project, String name) {
             exclude("META-INF/spring.*")
             exclude("META-INF/notice.txt")
             exclude("mockito-extensions/org.mockito.plugins.MockMaker")
+            jniLibs.keepDebugSymbols += "**.so"
         }
 
         compileOptions {
